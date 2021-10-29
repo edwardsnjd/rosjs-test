@@ -1,0 +1,11 @@
+services:
+
+  server:
+    build: .
+    container_name: rosjs-server
+    volumes: [.:/home/work]
+    working_dir: /home/work
+    tty: true
+    stdin_open: true
+    ports:
+      - 9090:9090
